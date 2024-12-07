@@ -16,9 +16,9 @@ public class Player extends Entity{
     public final int screenX;
     public final int screenY;
 
-    public Player(GamePanel gp, KeyHandler keyH){
+    public Player(GamePanel gp){
         this.gp = gp;
-        this.keyH = keyH;
+        this.keyH = gp.getKeyHandler();
         screenX = gp.screenWidth/2 - (gp.tileSize/2);
         screenY = gp.screenHeight/2 - (gp.tileSize/2);
         setDefaultValues();
